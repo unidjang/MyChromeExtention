@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 指定为utf-8 -->
+    <meta charset="utf-8" />
+
+    <!-- 引入jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- 引入自定义的js文件 -->
+    <script src="js/popup.js"></script>
+</head>
+
+<body style="height: 600px; width: 300px;">
+    <h1 id="showText"></h1>
+    <!-- 输入框 -->
+    <input type="text" id="input" />
+
+    <!-- 来个分隔上下两部分的东西 -->
+    <hr />
+
+
+    <!-- 一个h2标签“总金额”（内含span标签用于显示数字），一个h2标签“本次使用：”（内含input标签显示数字），最下面是一个input按钮。
+        每个标签都给一个id。 -->
+    <h2>总金额：<span id="total">0</span></h2>
+    <h2>本次使用：<input type="text" id="ThisAmount" /></h2>
+    <input type="submit" value="添加" id="add" />
+    <!-- 清空按钮 -->
+    <input type="submit" value="清空" id="reset" />
+</body>
+
+</html>
